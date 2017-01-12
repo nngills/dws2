@@ -1,0 +1,255 @@
+/*---Document---*/
+
+@font-face{
+	font-family: "Roboto Thin";
+    src: url(Roboto-Thin.ttf);
+}
+
+@font-face{
+	font-family: "Geometria Light";
+	src: url(Geometria-Light.otf);
+}
+
+body {
+	font: .75em "Courier New", Arial, sans-serif;
+	margin: 0px auto;
+	color: #333;
+	padding: 0px;
+}
+
+.ref{
+	clear: both!important;
+	color: #CCC;
+	font-style:italic;
+	font-size: .5em !important;
+}
+
+img {
+	width: 50%;
+}
+
+/*---HEADER---*/
+
+header{
+	text-transform:uppercase;
+	font-family: "Roboto Thin";
+	width: 100%;
+	text-align: center;	
+	margin-top: 75px;
+}
+
+	h1{
+		font-size: 7em;
+		margin-bottom: 35px;
+	}
+	
+	/*---NAV---*/
+	
+	nav{
+		font-size: 2em;
+		padding: 1px 0px;
+		border-top: 1px solid #999;
+		border-bottom: 1px solid #999;
+		text-align: center;		
+	}
+	
+	nav ul{
+		word-spacing: 1.5em;	
+	}
+	
+	nav li{
+		display: inline;	
+	}
+	
+		/*---ANCHOR---*/
+		a:link{
+			text-decoration: none;	
+		}
+		
+		a{
+			color: #666;	
+		}
+		
+		a[title]{
+			text-decoration: overline;	
+		}
+	
+/*---CONTAINER---*/	
+
+#container{
+	margin: 0 auto;
+	width: 900px;
+	background-color: white;
+}
+	
+	/*---QUOTE---*/
+	
+	#quote{
+		text-align:center;
+		border-bottom: 1px solid #CCC;
+		padding-bottom: 30px;	
+	}
+	
+	#quote h2{
+		text-transform:uppercase;
+		font: 3.8em "Geometria Light";
+		margin: 30px 0px 20px 0px;	
+	}
+	
+	#quote p{
+		font: 2em "Courier New";
+		color:  #999;	
+		margin: 0;
+	}
+	
+	/*---INTRO---*/
+	
+	#intro{
+		margin-top: 20px;
+		padding-bottom: 25px;
+		overflow:auto;
+	}
+	
+	#intro img{
+		float: left;
+		margin-right: 1.1111111%;
+		margin-bottom: 15px;	
+	}
+	
+	#intro p{
+		clear: right;
+		font-size: 1.2em;
+	}
+	
+	/*---POPULAR---*/
+	
+	#popular{
+		clear: both;
+		border-bottom: 1px solid #CCC;
+		margin-bottom: 20px;	
+	}
+	
+	h3 {
+		font: 4em "Geometria Light";
+		padding: 10px 0px;
+		margin: 0px 0px 15px 0px;
+		border-bottom: 1px solid #CCC;
+	}
+	
+	article{
+		overflow: auto;
+		margin-bottom: 30px;
+		font-size: 1.2em;	
+	}
+	
+	article img{
+		float: left;
+		margin-right: 1.1111111%;
+	}
+	
+	article h4{
+		font: bold 2.5em "Geometria Light";
+		margin: 0;
+		border-bottom: 1px solid #CCC;	
+	}
+	
+	article p::first-line{
+		font-size: 1.2em;	
+	}
+	
+	article > p{
+		font-style: italic;	
+	}
+	
+	h4 + p{
+		color: #666;	
+	}
+	
+/*---MEDIA QUERIES---*/
+
+	/*---TABLET---*/
+	
+	@media screen and (max-width: 900px){
+		#container{
+			width: 100%;	
+		}
+		
+		#popular p{
+			padding-right: 2%;	
+		}
+		
+		nav ul{
+			word-spacing: 1.7em;	
+		}	
+	}
+	
+	/*---MOBILE---*/
+	
+	@media screen and (max-width: 639px){
+		header{
+			margin: 0px;
+		}
+		
+		header h1{
+			font-size:5.1em;	
+		}
+		
+		#quote{
+			display: none;	
+		}	
+		
+		nav{
+			margin: 0px;
+			padding: 0px;
+			border: none;
+		}
+		
+		nav li{
+			display: list-item;	
+			border-bottom: 1px solid #999;
+			padding: 10px;
+		}
+		
+		li:first-child{
+			border-top: 1px solid #999;;	
+		}
+		
+		ul{
+			padding: 0px;
+			list-style-type: none;	
+		}
+		
+		h4{
+			font-size: 2em!important;
+		}
+		
+		article p{
+			margin-top: 10px;	
+		}
+		
+		#intro{
+			padding-bottom: 0px;
+		}
+		
+		#container p, h4{
+			padding-left: 2.1111111%;
+			padding-right: 2.1111111%;
+			clear: both;
+		}
+		
+		h3{
+			padding-left: 1.1111111%;
+			font-size: 3em;	
+		}
+		
+		img{
+			width: 100%;	
+			margin-bottom: 10px;
+		}
+		
+				/*---NTH---*/
+
+			li:nth-child(odd){
+				background-color:#DFDFDF;	
+			}
+	}
